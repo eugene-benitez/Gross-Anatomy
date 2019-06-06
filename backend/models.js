@@ -2,39 +2,39 @@ const mongoose = require('mongoose');
 
 mongoose.connect('mongodb://localhost/gross_anatomy', { useNewUrlParser: true });
 
-var PetSchema = new mongoose.Schema({
+var MuscleSchema = new mongoose.Schema({
     name: {
         type: String,
-        minlength: 3,
-        required: [true, "Name must be greater than 3 characters."]
+        required: [true, "Field is required."]
     },
-    type: {
+    origin: {
         type: String,
-        minlength: 3,
-        required: [true, "Type must be greater than 3 characters."]
+        required: [true, "Field is required."]
 
     },
-    description: {
+    insertion: {
         type: String,
-        minlength: 3,
-        required: [true, "Description must be greater than 3 characters."]
+        required: [true, "Field is required."]
     },
 
-    skillOne: {
+    nerveSupply: {
         type: String,
+        required: [true, "Field is required."]
     },
 
-    skillTwo: {
+    action: {
         type: String,
+        required: [true, "Field is required."]
     },
 
-    skillThree: {
+    region: {
         type: String,
+        required: [true, "Field is required."]
     },
 
-    votes: {
-        type: Number,
-        default: 0,
+    compartment: {
+        type: String,
+        required: [true, "Field is required."]
     }
 
 }
@@ -42,4 +42,4 @@ var PetSchema = new mongoose.Schema({
 
 
 
-module.exports = mongoose.model('Pet', PetSchema);
+module.exports = mongoose.model('Muscle', MuscleSchema);
