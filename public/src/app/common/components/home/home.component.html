@@ -7,48 +7,64 @@
         <h4>Create Muscle Object to API: </h4>
       </div>
       <div class="p-2">
-        <form>
-          <!-- Name -->
+        <form (submit)="onCreate()">
+
+          <!-- Region -->
           <div class="form-group">
+            <label>Region:</label>
+            <input type="text" class="form-control" placeholder="Region" name="newMuscle.region"
+              [(ngModel)]="newMuscle.region">
+            <h2 *ngIf="MuscleError.region.length">{{MuscleError.region}}</h2>
+          </div>
+
+          <div class="form-group">
+            <label>Compartment:</label>
+            <input type="text" class="form-control" placeholder="Compartment" name="newMuscle.compartment"
+              [(ngModel)]="newMuscle.compartment">
+            <h2 *ngIf="MuscleError.compartment.length">{{MuscleError.compartment}}</h2>
+          </div>
+
+          <!-- Name -->
+          <div class=" form-group">
             <label>Muscle Name:</label>
-            <input type="text" class="form-control" placeholder="Muscle Name">
+            <input type="text" class="form-control" placeholder="Muscle Name" name="newMuscle.name"
+              [(ngModel)]="newMuscle.name">
+            <h2 *ngIf="MuscleError.name.length">{{MuscleError.name}}</h2>
           </div>
 
           <!-- Origin -->
           <div class="form-group">
             <label>Origin:</label>
-            <input type="text" class="form-control" placeholder="Origin">
+            <input type="text" class="form-control" placeholder="Origin" name="newMuscle.origin"
+              [(ngModel)]="newMuscle.origin">
+            <h2 *ngIf="MuscleError.origin.length">{{MuscleError.origin}}</h2>
           </div>
 
           <!-- Insertion -->
           <div class="form-group">
             <label>Insertion:</label>
-            <input type="text" class="form-control" placeholder="Insertion">
+            <input type="text" class="form-control" placeholder="Insertion" name="newMuscle.insertion"
+              [(ngModel)]="newMuscle.insertion">
+            <h2 *ngIf="MuscleError.insertion.length">{{MuscleError.insertion}}</h2>
           </div>
 
           <!-- Nerve Supply -->
           <div class="form-group">
             <label>Nerve Supply:</label>
-            <input type="text" class="form-control" placeholder="Nerve Supply">
+            <input type="text" class="form-control" placeholder="Nerve Supply" name="newMuscle.nerveSupply"
+              [(ngModel)]="newMuscle.nerveSupply">
+            <h2 *ngIf="MuscleError.nerveSupply.length">{{MuscleError.nerveSupply}}</h2>
           </div>
 
           <!-- Action -->
           <div class="form-group">
             <label>Action:</label>
-            <input type="text" class="form-control" placeholder="Action">
+            <input type="text" class="form-control" placeholder="Action" name="newMuscle.action"
+              [(ngModel)]=" newMuscle.action">
+            <h2 *ngIf="MuscleError.action.length">{{MuscleError.action}}</h2>
           </div>
 
-          <!-- Region -->
-          <div class="form-group">
-            <label>Region:</label>
-            <input type="text" class="form-control" placeholder="Region">
-          </div>
 
-          <!-- Compartment -->
-          <div class="form-group">
-            <label>Compartment:</label>
-            <input type="text" class="form-control" placeholder="Compartment">
-          </div>
           <!--
 
           <div class="form-group">
