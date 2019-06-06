@@ -8,8 +8,8 @@ module.exports = app => {
         .put('/api/muscles/:id', controllers.updateOne)
         .delete('/api/muscles/:id', controllers.deleteOne)
 
-        .get('/api/increaseLikes/:petID/', controllers.increaseLike)
-        .get('/api/decreaseLikes/:petID/', controllers.decreaseLike)
+        .get('/api/increaseLikes/:muscleID/', controllers.increaseLike)
+        .get('/api/decreaseLikes/:muscleID/', controllers.decreaseLike)
         .all("*", (req, res, next) => {
             res.sendFile(path.resolve("./public/dist/public/index.html"))
         })
