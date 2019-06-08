@@ -3,6 +3,7 @@ import { newMuscle } from '../../models/createMuscle';
 import { MuscleError } from '../../models/muscleError';
 import { Router } from '@angular/router';
 import { HttpService } from '../../services/http.service';
+import { Muscle } from '../../models/Muscle';
 
 @Component({
   selector: 'app-home',
@@ -31,12 +32,18 @@ export class HomeComponent implements OnInit {
     compartment: '',
   }
 
+  allMuscle: Muscle[] = [];
+
   constructor(
     private router: Router,
     private http: HttpService
   ) { }
 
   ngOnInit() {
+    this.http.getMuscles()
+      .subscribe((data: Muscle[]) =>
+        this.allMuscle = data
+      )
   }
 
   onCreate() {
