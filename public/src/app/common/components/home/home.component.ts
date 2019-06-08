@@ -63,9 +63,11 @@ export class HomeComponent implements OnInit {
           compartment: '',
         };
 
+        //* IF No Errors
         if (!data['errors']) {
           this.router.navigateByUrl('');
         } else {
+          //* ELSE Display Errors
           for (let k in data['errors']) {
             this.MuscleError[k] = data['errors'][k]['message'];
           }
