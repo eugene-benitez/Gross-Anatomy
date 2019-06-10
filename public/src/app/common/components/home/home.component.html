@@ -85,7 +85,7 @@
         </thead>
         <tbody>
           <tr *ngFor="let muscle of allMuscle">
-            <td scope="row">{{muscle.name}}</td>
+            <td scope="row"><a href="/muscle/{{muscle._id}}">{{muscle.name}}</a></td>
             <td>{{muscle.origin}}</td>
             <td>{{muscle.insertion}}</td>
             <td>{{muscle.nerveSupply}}</td>

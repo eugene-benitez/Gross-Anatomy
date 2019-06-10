@@ -7,11 +7,15 @@ import { HomeComponent } from './common/components/home/home.component';
 import { HttpService } from './common/services/http.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { ViewMuscleComponent } from './common/components/view-muscle/view-muscle.component';
+import { EditMuscleComponent } from './common/components/edit-muscle/edit-muscle.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    ViewMuscleComponent,
+    EditMuscleComponent
   ],
   imports: [
     BrowserModule,
