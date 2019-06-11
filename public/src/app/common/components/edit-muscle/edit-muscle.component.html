@@ -1,3 +1,79 @@
-<p>
-  edit-muscle works!
-</p>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col-6">
+      <div class="col">
+        <div class="d-flex flex-column">
+          <div class="p-2">
+            <h4>Create Muscle Object to API: </h4>
+          </div>
+          <div class="p-2">
+            <form (submit)="onEdit()">
+
+              <div class="form-group">
+                <label>Region:</label>
+                <input type="text" class="form-control" placeholder="Region" name="editMuscle.region"
+                  [(ngModel)]="editMuscle.region" value="{{thisMuscle.region}}">
+                <h2 *ngIf="MuscleError.region.length">{{MuscleError.region}}</h2>
+              </div>
+
+              <div class="form-group">
+                <label>Compartment:</label>
+                <input type="text" class="form-control" placeholder="Compartment" name="editMuscle.compartment"
+                  [(ngModel)]="editMuscle.compartment" value="{{thisMuscle.compartment}}">
+                <h2 *ngIf="MuscleError.compartment.length">{{MuscleError.compartment}}</h2>
+              </div>
+
+              <!-- Name -->
+              <div class=" form-group">
+                <label>Muscle Name:</label>
+                <input type="text" class="form-control" placeholder="Muscle Name" name="editMuscle.name"
+                  [(ngModel)]="editMuscle.name" value="{{thisMuscle.name}}">
+                <h2 *ngIf="MuscleError.name.length">{{MuscleError.name}}</h2>
+              </div>
+
+              <!-- Origin -->
+              <div class="form-group">
+                <label>Origin:</label>
+                <input type="text" class="form-control" placeholder="Origin" name="editMuscle.origin"
+                  [(ngModel)]="editMuscle.origin" value="{{thisMuscle.origin}}">
+                <h2 *ngIf="MuscleError.origin.length">{{MuscleError.origin}}</h2>
+              </div>
+
+              <!-- Insertion -->
+              <div class="form-group">
+                <label>Insertion:</label>
+                <input type="text" class="form-control" placeholder="Insertion" name="editMuscle.insertion"
+                  [(ngModel)]="editMuscle.insertion" value="{{thisMuscle.insertion}}">
+                <h2 *ngIf="MuscleError.insertion.length">{{MuscleError.insertion}}</h2>
+              </div>
+
+              <!-- Nerve Supply -->
+              <div class="form-group">
+                <label>Nerve Supply:</label>
+                <input type="text" class="form-control" placeholder="Nerve Supply" name="editMuscle.nerveSupply"
+                  [(ngModel)]="editMuscle.nerveSupply" value="{{thisMuscle.nerveSupply}}">
+                <h2 *ngIf="MuscleError.nerveSupply.length">{{MuscleError.nerveSupply}}</h2>
+              </div>
+
+              <!-- Action -->
+              <div class="form-group">
+                <label>Action:</label>
+                <input type="text" class="form-control" placeholder="Action" name="editMuscle.action"
+                  [(ngModel)]=" editMuscle.action" value="{{thisMuscle.action}}">
+                <h2 *ngIf="MuscleError.action.length">{{MuscleError.action}}</h2>
+              </div>
+              <button class="btn btn-success" type="submit">Create</button>
+            </form>
+          </div>
+          <div class="p-2">Flex Item 3 Placeholder</div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      3 of 3
+    </div>
+  </div>
+</div>

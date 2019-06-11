@@ -65,7 +65,7 @@ export class HomeComponent implements OnInit {
 
         //* IF No Errors
         if (!data['errors']) {
-          this.router.navigateByUrl('');
+          this.router.navigateByUrl('/');
         } else {
           //* ELSE Display Errors
           for (let k in data['errors']) {
@@ -73,9 +73,7 @@ export class HomeComponent implements OnInit {
           }
         }
 
-
       });
-
   }
 
 }

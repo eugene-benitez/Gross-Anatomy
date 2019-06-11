@@ -90,6 +90,8 @@
             <td>{{muscle.insertion}}</td>
             <td>{{muscle.nerveSupply}}</td>
             <td>{{muscle.action}}</td>
+            <td><button class="btn btn-primary" [routerLink]="['/muscle/edit/', muscle._id]">Edit</button></td>
+
           </tr>
         </tbody>
       </table>
