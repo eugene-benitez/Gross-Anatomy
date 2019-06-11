@@ -7,9 +7,9 @@ Gross Anatomy RESTful API and Web Application for aspiring medical students/prof
 
 Features:
 
-Tutor / Testing App using jQuery
-View Muscle Information
-Edit Muscle Information (Prepopulated Fields)
-Sort by Compartment
-Sort by Region
-Sort by Action
+Tutor / Testing App using jQuery . 
+View Muscle Information . 
+Edit Muscle Information (Prepopulated Fields) . 
+Sort by Compartment . 
+Sort by Region . 
+Sort by Action . 
