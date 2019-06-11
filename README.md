@@ -12,4 +12,4 @@ View Muscle Information\
 Edit Muscle Information (Prepopulated Fields)\
 Sort by Compartment\
 Sort by Region\
-Sort by Action\ 
+Sort by Action  
