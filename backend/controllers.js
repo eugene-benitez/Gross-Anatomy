@@ -9,8 +9,8 @@ module.exports = {
     },
 
     addOne: (req, res) => {
-        const newAuthor = req.body;
-        Muscle.create(newAuthor)
+        const newMuscle = req.body;
+        Muscle.create(newMuscle)
             .then(data => res.json(data))
             .catch(err => res.json(err));
     },
